@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>goHere 2.0</title>
+    <link rel="stylesheet" href="/src/css/main.min.css">
+</head>
+
+<body>
+    <div w3-include-html="./build/header.html"></div>
+    <div w3-include-html="./build/loader.html" id="loader" style="background-color:black;"></div>
+    <section class="hero gg">
+        <canvas id="canvasSpace"></canvas>
+        <div class="divider-bottom"></div>
+    </section>
+    <section class="sec gg">
+        <div class="cc">
+            <div class="mini">
+                <div class="icon ico-black"></div>
+                <h6>Masterminds</h6>
+            </div>
+            <h2>Sharpening the cutting edge</h2>
+            <p>At goHere we develop and apply technology in creative ways, adding value to your organization.
+                Technology
+                enables transformational opportunities for your business.</p>
+            <a href="#">Get Started</a>
+        </div>
+    </section>
+
+</body>
+<script src="js/includeHTML.js"></script>
+<script type="module" src="js/planet.js"></script>
+<script>
+    window.onload = function () {
+        fadeOutEffect();
+    };
+
+    function fadeOutEffect() {
+        var fadeTarget = document.getElementById("loader");
+        var fadeEffect = setInterval(function () {
+            if (!fadeTarget.style.opacity) {
+                fadeTarget.style.opacity = 1;
+            }
+            if (fadeTarget.style.opacity > 0) {
+                fadeTarget.style.opacity -= 0.2;
+            } else {
+                clearInterval(fadeEffect);
+                fadeTarget.style.display = 'none';
+            }
+        }, 100);
+    }
+</script>
+
+</html>

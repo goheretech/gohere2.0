@@ -1,11 +1,11 @@
 $colors: (purple: #74268b,
     pink: #f542a1);
 
+$containerWidth: 1300px;
+
 @function color($color-name) {
     @return map-get($colors, $color-name)
-}
-
-;
+};
 
 
 body {
@@ -23,6 +23,7 @@ body {
         //padding: 1em;
         //padding-left: 6em;
         display: flex;
+        align-items:baseline;
         justify-content: space-between;
 
         .logo {
@@ -31,8 +32,9 @@ body {
             font-size: 55px;
             margin: 0;
             margin-left: 150px;
-            padding-top: 10px;
+            padding-top: 20px;
             text-decoration: none;
+            
         }
 
         nav {
@@ -41,6 +43,8 @@ body {
             display: flex;
             align-items: center;
             padding-bottom: 10px;
+            height:100%;
+            margin-top: -20px;
 
 
 
@@ -55,6 +59,7 @@ body {
                 display: flex;
                 align-items: center;
                 letter-spacing: 10px;
+                margin-top: -40px;
                 padding-bottom: 10px;
                 transition: all 300ms;
 
@@ -70,12 +75,17 @@ body {
 
     }
 
-    ;
+    .hero{
+        background:red;
+    }
+    
 }
 
 
 canvas {
     height: 100vh;
+    position:absolute;
+    z-index: 1;
 
 }
 
@@ -84,9 +94,10 @@ section {
     position: relative;
     display: flex;
     justify-content: center;
+    
 
     .cont {
-        max-width: 1300px;
+        max-width: $containerWidth;
         width: 100%;
         //background: blue;
         display: flex;
@@ -107,27 +118,34 @@ section {
             .creative {
                 font-size: 160px;
                 color: white;
+                line-height:80%;
                 text-align: right;
                 margin-bottom: 0;
+
+                &.lh{
+                    line-height:100%;
+                }
 
 
 
                 .colorChange {
                     background-image: linear-gradient(to right, #d624a6, #f7a140, green, #22d8d8, purple, #d624a6);
-                    background-size: 600%;
+                    background-size: 600%;                    
                     z-index: 1;
                     background-clip: text;
                     -webkit-background-clip: text;
                     -webkit-text-fill-color: transparent;
                     animation: colorScroll 20s linear infinite;
+                    line-height:100%;
                     position: relative;
 
                     &::after {
                         content: 'Creative';
                         position: absolute;
-                        top: 0;
+                        top: 10;
                         left: 0;
                         filter: blur(10px);
+                        line-height:100%;
                         z-index: 5;
                         background-image: linear-gradient(to right, #d624a6, #f7a140, green, #22d8d8, purple, #d624a6);
                         background-size: 600%;
@@ -162,11 +180,93 @@ section {
     position: relative;
 }
 
+.gg{
+    .cc {
+        width: $containerWidth;
+        flex-direction: column;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45%;
+        text-align: center;
+        color: white;
+        position: relative;
+        z-index: 15;
+
+        .mini {
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            position: relative;
+
+            .icon {
+                width: 40px;
+                height: 40px;
+                //background: black;
+                position: absolute;
+                background-image: url('../textures/cube.png');
+                background-size: contain;
+
+                &.ico-black{
+                    filter: grayscale(1) contrast(3);
+                };
+
+                &.ico-purple {
+                    filter: hue-rotate(-25deg);
+                }
+            }
+
+            h6 {
+                margin: 0;
+                font-size: 12px;
+                letter-spacing: 4px;
+                font-weight: 700;
+                text-transform: uppercase;
+                position: relative;
+            }
+
+
+        }
+
+        h2 {
+            text-transform: capitalize;
+            line-height:95%;
+            font-size: 65px;
+            margin: 0;
+            padding-top: 25px;
+        }
+
+        p {
+            width: 73%;
+            font-size: 18px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+            border: solid white;
+            padding: 10px 20px;
+            transition: all 500ms;
+
+            &:hover {
+                padding: 12px 25px;
+            }
+        }
+    }
+}
+
 .sec {
 
     background: linear-gradient(color(purple), color(pink));
     height: 70vh;
     width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    
 
 }
 
