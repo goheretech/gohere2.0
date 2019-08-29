@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>goHere 2.0</title>
+    <link rel="stylesheet" href="/src/css/main.min.css">
+</head>
+
+<body>
+    <div w3-include-html="../build/header.html"></div>
+    <section class="HomeHero">
+        <div class="cont">
+
+            <div class="HomeHero-Col">
+                <h1 class="creative"><span class="colorChange">Creative</span><br>Solutions</h1>
+            </div>
+        </div>
+        <canvas id="canvasSpace"></canvas>
+        <div class="divider-bottom"></div>
+    </section>
+    <section class="sec">
+
+    </section>
+    <section>
+        <canvas class="secblack" id="canvasHex"></canvas>
+        <div class="divider-top"></div>
+        <div class="divider-bottom-alt"></div>
+    </section>
+    <section class="sec-alt">
+
+    </section>
+    <section>
+        <canvas class="secblack" id="canvasHexPurple"></canvas>
+        <div class="divider-top-alt"></div>
+        <div class="divider-bottom"></div>
+    </section>
+</body>
+    <script src="js/includeHTML.js"></script>
+    <script type="module" src="js/planet.js"></script>
+    <script type="module" src="js/hex.js"></script>
+    <script type="module" src="js/hex-purp.js"></script>
+</html>

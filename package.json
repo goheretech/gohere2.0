@@ -10,10 +10,13 @@
     "type": "git",
     "url": "git+https://github.com/goheretech/gohere2.0.git"
   },
-  "author": "Corey Jack LeMay",
+  "author": "",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/goheretech/gohere2.0/issues"
   },
-  "homepage": "https://github.com/goheretech/gohere2.0#readme"
+  "homepage": "https://github.com/goheretech/gohere2.0#readme",
+  "dependencies": {
+    "three": "^0.108.0"
+  }
 }
