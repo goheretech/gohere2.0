@@ -87,7 +87,7 @@ function render() {
     camera.rotation.x += mouseY * delta;
     camera.rotation.y += mouseX * delta;
 
-    console.log(180 * camera.rotation.y / Math.PI + " degrees");
+    //console.log(180 * camera.rotation.y / Math.PI + " degrees");
 
     if (camera.rotation.x >= cameraAttr.startAngleX + cameraAttr.boundX) {
         camera.rotation.x = cameraAttr.startAngleX + cameraAttr.boundX

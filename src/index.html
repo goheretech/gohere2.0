@@ -6,13 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>goHere 2.0</title>
-    <link rel="stylesheet" href="/src/css/main.min.css">
+    <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <script src='https://www.w3schools.com/lib/w3.js'></script>
 </head>
 
 <body>
-    <div w3-include-html="./build/loader.html" id="loader"></div>
-    <div w3-include-html="./build/header.html"></div>
-    <section class="HomeHero">
+    <div w3-include-html="./build/loader.html" id="loader"></div> 
+    <div w3-include-html="./build/header.html" ></div>
+    <section class="Hero home">
         <div class="cont">
 
             <div class="HomeHero-Col">
@@ -20,63 +22,70 @@
             </div>
         </div>
         <canvas id="canvasSpace"></canvas>
-        <div class="divider-bottom"></div>
+        <div class="divider-bottom purple"></div>
     </section>
-    <section class="sec gg">
-        <div class="cc">
+    <section class="sec purp2pink gg">
+        <div data-aos="fade-up" data-aos-offset="-400" class="cc">
             <div class="mini">
                 <div class="icon ico-black"></div>
                 <h6>Masterminds</h6>
             </div>
-            <h2>Sharpening the cutting edge</h2>
+            <h2>Sharpening the <br>cutting edge</h2>
             <p>At goHere we develop and apply technology in creative ways, adding value to your organization. Technology
                 enables transformational opportunities for your business.</p>
-            <a href="#">Get Started</a>
+            <a href="what.html">Learn More</a>
         </div>
     </section>
     <section class="gg">
-        <canvas class="secblack" id="canvasHex"></canvas>
-        <div class="cc">
+        <canvas class="sec black" id="canvasHex"></canvas>
+        <div data-aos="fade-up" data-aos-offset="-300" class="cc">
             <div class="mini">
                 <div class="icon"></div>
                 <h6>street-smart strategists</h6>
             </div>
-            <h2>Creative Solutions are our business.</h2>
+            <h2>Creative Solutions <br>are our business.</h2>
             <p>At goHere we develop and apply technology in creative ways, adding value to your organization. Technology
                 enables transformational opportunities for your business.</p>
             
         </div>
-        <div class="divider-top"></div>
-        <div class="divider-bottom-alt"></div>
+        <div class="divider-top pink"></div>
+        <div class="divider-bottom pink"></div>
     </section>
-    <section class="sec-alt gg">
-        <div class="cc">
+    <section class="sec pink2purp gg">
+        <div data-aos="fade-up" data-aos-offset="-300" class="cc">
             <div class="mini">
                 <div class="icon ico-black"></div>
                 <h6>INCITING INSPIRATION</h6>
             </div>
-            <h2>Fall back in <b>Love</b> with your branding.</h2>
+            <h2>Fall back in <b>Love</b> <br>with your brand.</h2>
             <p>goHere provided you with the right tools to display your brand and products to achieve strategic outcomes.</p>
-            <a href="#">Get Started</a>
+            <a href="work.html">View Our Work</a>
         </div>
     </section>
     <section class="gg">
-        <canvas class="secblack" id="canvasHexPurple"></canvas>
-        <div class="cc">
+        <canvas class="sec black" id="canvasHexPurple"></canvas>
+        <div data-aos="fade-up" data-aos-offset="-300" class="cc">
             <div class="mini">
                 <div class="icon ico-purple"></div>
                 <h6>INCITING INSPIRATION</h6>
             </div>
-            <h2>Advanced Design Attracts Business.</h2>
+            <h2>Advanced Design <br>Attracts Business.</h2>
             <p>goHere provided you with the right tools to display your brand and products to achieve strategic
                 outcomes.</p>
-            <a href="#">Get Started</a>
+            <a href="contact.html">Get Started</a>
         </div>
-        <div class="divider-top-alt"></div>
-        <div class="divider-bottom"></div>
+        <div class="divider-top purple"></div>
+        <div class="divider-bottom purple"></div>
     </section>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+   
     <script src="js/includeHTML.js"></script>
+    
+    
     <script type="module" src="js/planet.js"></script>
     <script type="module" src="js/hex.js"></script>
     <script type="module" src="js/hex-purp.js"></script>    

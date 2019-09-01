@@ -5,37 +5,59 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>goHere 2.0</title>
-    <link rel="stylesheet" href="/src/css/main.min.css">
+    <title>Who | goHere 2.0</title>
+    <link rel="stylesheet" href="css/main.min.css">
+
 </head>
 
 <body>
     <div w3-include-html="./build/header.html"></div>
-    <div w3-include-html="./build/loader.html" id="loader" style="background-color:black;"></div>
-    <section class="hero gg">
+    <div w3-include-html="./build/loader.html" id="loader"></div>
+    <section class="Hero who">
+        <div class="cont">
+
+            <div class="HomeHero-Col">
+                <h1 class="creative"><span class="colorChange bril">Brilliance</span><br><span="lh">Engineeers</span>
+                </h1>
+            </div>
+        </div>
         <canvas id="canvasSpace"></canvas>
-        <div class="divider-bottom"></div>
+        <div class="divider-bottom orange"></div>
     </section>
-    <section class="sec gg">
-        <div class="cc">
+    <section class="sec orange2pink gg">
+        <div data-aos="fade-up" data-aos-offset="-400" class="cc">
             <div class="mini">
                 <div class="icon ico-black"></div>
-                <h6>Masterminds</h6>
+                <h6>Nerd alert</h6>
             </div>
-            <h2>Sharpening the cutting edge</h2>
-            <p>At goHere we develop and apply technology in creative ways, adding value to your organization.
-                Technology
-                enables transformational opportunities for your business.</p>
-            <a href="#">Get Started</a>
+            <h2>New Strategies. Old Values.</h2>
+            <p>As members of the first generation to grow up during an age of hyper-stimulation; the founders of goHere
+                straddle the way it was with a deep understanding of what it has become.</p>
+            <a href="#">Learn More</a>
         </div>
     </section>
+    <section class="gg">
+        <canvas class="sec black" id="canvasHex"></canvas>
+        <div data-aos="fade-up" data-aos-offset="-300" class="cc">
+            <div class="mini">
+                <div class="icon"></div>
+                <h6>street-smart strategists</h6>
+            </div>
+            <h2>Creative Solutions <br>are our business.</h2>
+            <p>At goHere we develop and apply technology in creative ways, adding value to your organization. Technology
+                enables transformational opportunities for your business.</p>
 
+        </div>
+        <div class="divider-top pink"></div>
+        <div class="divider-bottom pink"></div>
+    </section>
 </body>
-<script src="js/includeHTML.js"></script>
-<script type="module" src="js/planet.js"></script>
+<script src="https://www.w3schools.com/lib/w3.js"></script>;
+<script src="js/includeHTML.js"></script>;
 <script>
     window.onload = function () {
         fadeOutEffect();
+        
     };
 
     function fadeOutEffect() {
